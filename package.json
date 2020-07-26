@@ -5,16 +5,15 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon server.js",
-    "server":"node server.js",
-    "peer":"peerjs --port 3001",
+    "server": "node server.js",
+    "peer": "peerjs --port 3001",
     "start": "concurrently \"npm run server\" \"npm run peer\""
-
-
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^5.2.0",
     "ejs": "^3.1.3",
     "express": "^4.17.1",
     "socket.io": "^2.3.0",
