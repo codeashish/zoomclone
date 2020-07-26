@@ -4,10 +4,11 @@ const app = express();
 const server = require("http").Server(app);
 const io = require("socket.io")(server);
 const { v4: uuidv4 } = require("uuid");
-const port = 8080 || process.env.PORT;
+const port = process.env.PORT||8080;
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
+app.listen(port)
 server.listen(port, () => {
   console.log("Server is liten in port ");
 });
