@@ -8,7 +8,7 @@ const port = process.env.PORT||8080;
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
-app.listen(port)
+console.log(process.env.PORT)
 server.listen(port, () => {
   console.log("Server is liten in port ");
 });
